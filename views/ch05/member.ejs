@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+</head>
+<body>
+    <%
+        let member = model;
+    %>
+    <h2><%=member.name%>의 정보</h2>
+    <table border="1">
+        <tr>
+            <td>no</td>
+            <td><%=member.no%></td>
+        </tr>
+        <tr>
+            <td>addr</td>
+            <td><%=member.addr%></td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>inputName</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form method="post" action="/ch05/inputName">
+            <div>
+                이름 : 
+                <%
+                    if(model.name) {
+                %>
+                        <input type="text" name="name" value="<%=model.name%>">
+                <%        
+                    } else {
+                %>
+                        <input type="text" name="name">
+                <%            
+                    }
+                %>
+            <div>
+            <div><input type="checkbox" name="ch" value="ok">이름 저장</div>
+            <div><button type="submit">입력</button></div>
+        </form>
+    </body>
+</html>

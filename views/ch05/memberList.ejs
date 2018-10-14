@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h2>MEMBER LIST</h2>
+    <table border="1">
+        <tr>
+            <th>no</th>
+            <th>name</th>
+        </tr>
+        <% 
+            let memberList=model;
+            for(let member of memberList) { 
+        %>
+                <tr>
+                    <td><%=member.no%></td>
+                    <td>
+                        <!-- <a href="/ch05/member?no=<%=member.no%>"> -->
+                        <a href="/ch05/member/<%=member.no%>">
+                            <%=member.name%>
+                        </a>
+                    </td>
+                </tr>
+        <% 
+            } 
+        %>
+    </table>
+</body>
+</html>
